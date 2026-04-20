@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iron Beast Fitness</title>
+<meta name="description" content="Join Iron Beast Fitness Gym. Transform your body with expert trainers.">
+
+<style>
+:root{
+  --main:#ff2e63;
+  --dark:#0b0b0f;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+body{background:var(--dark);color:#fff;overflow-x:hidden;}
+
+header{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:
+  linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9)),
+  url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200') center/cover no-repeat;
+}
+h1{
+  font-size:2.8rem;
+  color:var(--main);
+}
+p{opacity:.8;margin:10px 0;}
+
+.btn{
+  padding:12px 25px;
+  border:none;
+  border-radius:25px;
+  background:var(--main);
+  color:#fff;
+  margin:10px;
+  cursor:pointer;
+}
+.btn:hover{transform:scale(1.08);}
+
+section{padding:60px 15px;text-align:center;}
+
+.cards{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+.card{
+  background:#111;
+  padding:20px;
+  margin:10px;
+  width:240px;
+  border-radius:12px;
+}
+.price{
+  font-size:1.8rem;
+  color:var(--main);
+}
+
+.whatsapp{
+  position:fixed;
+  bottom:15px;
+  right:15px;
+  background:#25D366;
+  padding:14px;
+  border-radius:50%;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <div>
+    <h1>Transform Your Body</h1>
+    <p>Join Iron Beast Fitness Today</p>
+    <button class="btn" onclick="buy()">Join Now</button>
+    <button class="btn" onclick="chat()">WhatsApp</button>
+  </div>
+</header>
+
+<section>
+  <h2>Why Choose Us</h2>
+  <div class="cards">
+    <div class="card">💪 Modern Equipment</div>
+    <div class="card">🔥 Expert Trainers</div>
+    <div class="card">🥗 Diet Plans</div>
+  </div>
+</section>
+
+<section>
+  <h2>Membership Plans</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Basic</h3>
+      <p class="price">₹999</p>
+    </div>
+    <div class="card">
+      <h3>Pro</h3>
+      <p class="price">₹1999</p>
+    </div>
+    <div class="card">
+      <h3>Elite</h3>
+      <p class="price">₹2999</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Testimonials</h2>
+  <p>"Best gym experience ever!" ⭐⭐⭐⭐⭐</p>
+</section>
+
+<a class="whatsapp" onclick="chat()">💬</a>
+
+<script>
+function chat(){
+  window.open("https://wa.me/91XXXXXXXXXX?text=Hi I want to join your gym");
+}
+
+function buy(){
+  alert("Payment integration coming soon!");
+}
+</script>
+
+</body>
+</html>
